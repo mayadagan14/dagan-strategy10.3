@@ -966,7 +966,6 @@ margin-bottom: 180px;
 
 .service-box{
   position: relative;       /* כדי שהכפתור יישב יחסית לבוקס */
-  padding-bottom: 60px;     /* מקום לכפתור שלא ידרוס טקסט */
   background: #f0f5f1;
   border-radius: 22px;
   padding: 0 10px 0 10px;
@@ -1024,19 +1023,15 @@ margin-bottom: 180px;
     grid-template-columns: 1fr;
     gap: 16px;
   }
+    .service-box{
+      height: auto;
+      min-height: auto;
+    }
+  
+  
   
 }
-@media (max-width: 768px){
-  .service-icon{
-    width: 40px;
-    height: 40px;
-  }
-  .services-grid{
-    grid-template-columns: 2fr;
-    gap: 16px;
-  }
-  
-}
+
 
 .service-btn{
 
