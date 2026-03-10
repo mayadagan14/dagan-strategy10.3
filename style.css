@@ -727,6 +727,9 @@ main{
 
 @media (max-width: 980px){
 
+  .reasons-list::before{
+    display: none;
+  }
   .section.alt{
     padding: 70px 0 110px;
   }
@@ -968,7 +971,7 @@ margin-bottom: 180px;
   position: relative;       /* כדי שהכפתור יישב יחסית לבוקס */
   background: #f0f5f1;
   border-radius: 22px;
-  padding: 0 10px 0 10px;
+  padding: 0 10px  10px;
   height: 580px
   
 }
@@ -1024,6 +1027,7 @@ margin-bottom: 180px;
     gap: 16px;
   }
     .service-box{
+      padding: 0 10px 60px 10px;
       height: auto;
       min-height: auto;
     }
