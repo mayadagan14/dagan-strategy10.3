@@ -480,6 +480,7 @@ main{
   }
 
   .hero-kicker{
+    margin-top: 50px;
     font-size: 13px;
     margin-bottom: 10px;
     text-align: center;
@@ -487,8 +488,6 @@ main{
 
   .hero-text h1{
     font-size: var(--text-large-mobile);
-  
-    margin-bottom: 10px;
   }
 
   .hero-subtitle{
@@ -496,15 +495,16 @@ main{
     margin-bottom: 14px;
     max-width: 100%;
     font-weight: 400;
+    white-space: normal;
   }
 
   .hero-motiv{
     font-weight: 600;
     font-size: var(--text-normal-mobile);
     white-space: normal;
-    margin-bottom: 10px;
+    
   }
-
+ 
   .hero-btn{
     min-width: 210px;
     padding: 14px 22px;
@@ -528,11 +528,12 @@ main{
 
   .hero-image{
     position: relative;
-    right: 50%;
     bottom: auto;
     display: flex;
+    margin-left: 50%;
     justify-content: center;
   }
+
 
   .hero-image img{
     width: 260px;
