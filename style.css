@@ -422,110 +422,13 @@ main{
 }
 
 
-@media (max-width: 768px){
-  .hero-person-tag{
-    position: absolute;
-    top: 114px;
-    left: 0;
-    z-index: 3;
-    background: rgba(255,255,255,0.88);
-    backdrop-filter: blur(6px);
-    padding: 14px 18px;
-    box-shadow: 0 8px 24px rgba(0,0,0,0.08);
-  }
-  
-  .hero-person-tag strong{
-    display: block;
-    color: #2e5b3c;
-    font-size: var(--text-small-mobile);
-    font-weight: 500;
-    text-align: center;
-  }
-  
-  .hero-person-tag span{
-    display: block;
-    margin-top: 4px;
-    color: #56725e;
-    font-size: var(--text-small-mobile);
-    font-weight: 400;
-  }
-
-  .hero-inner{
-    grid-template-columns: 1fr;
-    text-align: center;
-    gap: 30px;
-    padding: 0 20px 40px;
-    min-height: auto;
-  }
-
-  .hero-kicker{
-    margin-top: 40px;
-  }
-
-  .hero-text h1{
-    font-size: var(--text-large-mobile);
-  }
-
-  .hero-subtitle{
-    font-size: var(--text-small-mobile);
-    margin-bottom: 14px;
-    max-width: 100%;
-    white-space: normal;
-  }
-
-  .hero-motiv{
-    font-size: var(--text-normal-mobile);
-    margin-bottom: 10px;
-    white-space: normal;
-  }
-
-  .hero-btn{
-    margin: auto;
-  }
-
-  .hero-image-wrap{
-    min-height: 340px;
-  }
-
-  .hero-image{
-    position: relative;
-    margin-left: 0;
-  }
-
-  .hero-image img{
-    width: 260px;
-  }
-
-  .hero-shape{
-    width: 260px;
-    height: 260px;
-    right: 50%;
-    transform: translateX(50%);
-  }
-
-  .hero-person-tag{
-    left: 50%;
-    transform: translateX(-50%);
-    top: 20px;
-  }
-
-  .hero-bird{
-    width: 50px;
-    left: 50%;
-    transform: translateX(-50%);
-  }
-  .hero-bird img{
-    width: 50px;
-    height: auto;
-    opacity: 0.85;
-  }
-
-}
 @media (max-width: 900px){
   .hero-person-tag{
     position: absolute;
     top: 100px;
     margin-left: auto;
+    left: auto; 
+    right: 20px;
     z-index: 3;
     background: rgba(255,255,255,0.88);
     backdrop-filter: blur(6px);
@@ -592,10 +495,11 @@ main{
     font-size: var(--text-small-mobile);
     margin-bottom: 14px;
     max-width: 100%;
+    font-weight: 400;
   }
 
   .hero-motiv{
-    font-weight: 400;
+    font-weight: 600;
     font-size: var(--text-normal-mobile);
     white-space: normal;
     margin-bottom: 10px;
