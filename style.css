@@ -521,6 +521,11 @@ main{
 
 }
 @media (max-width: 900px){
+  .hero-bird{
+    width: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
 
   .hero{
     padding: 24px 0 0;
@@ -591,7 +596,7 @@ main{
 
   .hero-image{
     position: relative;
-    right: auto;
+    right: 50%;
     bottom: auto;
     display: flex;
     justify-content: center;
@@ -600,7 +605,7 @@ main{
   .hero-image img{
     width: 260px;
     max-width: 80vw;
-    margin: 20px auto 0;
+    margin: 40px auto 0;
   }
 
   .hero-person-tag{
