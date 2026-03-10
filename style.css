@@ -16,8 +16,13 @@
   --radius-xl: 28px;
 
   --text-large: 60px;
-  --text-normal: 27px;
-  --text-small: 22px;
+  --text-normal: 19px;
+  --text-small: 16px;
+
+  --text-large-mobile: 42px;
+  --text-normal-mobile: 27px;
+  --text-small-mobile: 22px;
+
 
   --background-main: linear-gradient(135deg, #eef4ee 0%, #dbe8db 100%);
 
@@ -417,49 +422,6 @@ main{
 }
 
 
-@media (max-width: 1200px){
-
-  .hero-inner{
-    grid-template-columns: 1fr 0.9fr;
-    padding: 0 24px;
-  }
-
-  .hero-text h1{
-    font-size: 56px;
-  }
-
-  .hero-subtitle{
-    font-size: 20px;
-    white-space: normal;
-  }
-
-  .hero-motiv{
-    white-space: normal;
-    font-size: 34px;
-    margin-bottom: 10px;
-  }
-
-  .hero-image img{
-    width: 420px;
-  }
-
-  .hero-shape{
-    width: 380px;
-    height: 380px;
-  }
-
-  .hero-bird{
-    width: 260px;
-    left: 45%;
-  }
-
-  .hero-bird img{
-    width: 250px;
-    height: auto;
-    opacity: 0.85;
-  }
-
-}
 @media (max-width: 768px){
 
   .hero-inner{
@@ -475,18 +437,18 @@ main{
   }
 
   .hero-text h1{
-    font-size: 40px;
+    font-size: var(--text-large-mobile);
   }
 
   .hero-subtitle{
-    font-size: 15px;
+    font-size: var(--text-small-mobile);
     margin-bottom: 14px;
     max-width: 100%;
     white-space: normal;
   }
 
   .hero-motiv{
-    font-size: 26px;
+    font-size: var(--text-normal-mobile);
     margin-bottom: 10px;
     white-space: normal;
   }
@@ -569,19 +531,19 @@ main{
   }
 
   .hero-text h1{
-    font-size: 42px;
+    font-size: var(--text-large-mobile);
     line-height: 1.1;
     margin-bottom: 16px;
   }
 
   .hero-subtitle{
-    font-size: 15px;
+    font-size: var(--text-small-mobile);
     margin-bottom: 14px;
     max-width: 100%;
   }
 
   .hero-motiv{
-    font-size: 18px;
+    font-size: var(--text-normal-mobile);
     white-space: normal;
     margin-bottom: 10px;
   }
@@ -589,7 +551,7 @@ main{
   .hero-btn{
     min-width: 210px;
     padding: 14px 22px;
-    font-size: 16px;
+    font-size: var(--text-normal-mobile);
   }
 
   .hero-image-wrap{
@@ -818,9 +780,10 @@ main{
 
   .section.alt .section-title{
     text-align: center;
-    font-size: 44px;
+    font-size: var(--text-large-mobile);
     margin-bottom: 24px;
   }
+  
 
   .split-media{
     order: -1;
@@ -843,12 +806,12 @@ main{
 
 
   .reason-item h2{
-    font-size: 22px;
+    font-size: var(--text-normal-mobile);
     margin-bottom: 8px;
   }
 
   .reason-item p{
-    font-size: 16px;
+    font-size: var(--text-small-mobile);
     line-height: 1.75;
   }
 
@@ -960,6 +923,14 @@ main{
     grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 16px;
   }
+  .fit-text{
+    margin: 0;
+    font-size: var(--text-normal-mobile);
+    }
+    .fit-title{
+      font-size: var(--text-large-mobile);
+     
+      }
   }
   
   
@@ -1088,11 +1059,26 @@ margin-bottom: 180px;
 
 @media (max-width: 768px){
   .service-icon{
-    width: 48px;
-    height: 48px;
+    width: 40px;
+    height: 40px;
   }
+  .services-grid{
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+  
 }
-
+@media (max-width: 768px){
+  .service-icon{
+    width: 40px;
+    height: 40px;
+  }
+  .services-grid{
+    grid-template-columns: 2fr;
+    gap: 16px;
+  }
+  
+}
 
 .service-btn{
 
@@ -1242,12 +1228,7 @@ body.service-consulting .section{
 
 }
 
-@media (max-width: 1100px){
-  .services-grid{ grid-template-columns: repeat(2, 1fr); }
-}
-@media (max-width: 700px){
-  .services-grid{ grid-template-columns: 1fr; }
-}
+
 
 
 /* ===== Elegant hover dropdown ===== */
@@ -2417,32 +2398,6 @@ transition: transform .18s ease, box-shadow .18s ease;
 MOBILE / TABLET RESPONSIVE
 ========================= */
 
-/* טאבלט */
-@media (max-width: 1024px){
-
-  .container{
-    width: min(960px, 92%);
-  }
-
-  /* Services: 2 בעמודה */
-  .services-grid{
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  /* Process layout: עמודה אחת */
-  .process-layout{
-    grid-template-columns: 1fr;
-  }
-
-  .process-right{
-    position: static;
-    top: auto;
-  }
-
-  .process-left{
-    justify-content: center;
-  }
-}
 
 /* מובייל */
 @media (max-width: 700px){
@@ -2488,10 +2443,7 @@ MOBILE / TABLET RESPONSIVE
     margin-bottom: 22px;
   }
 
-  .services-grid{
-    grid-template-columns: 1fr;
-    gap: 16px;
-  }
+  
 
 
 
@@ -3482,16 +3434,7 @@ h3{ margin: 22px 0 10px; }
 
 /* ================= Services preview ================= */
 
-.services-grid{
-  position: relative;
-  z-index: 2;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 22px;
-  align-items: center;
-margin-bottom: 180px;
 
-}
 
 
 
@@ -3610,12 +3553,7 @@ body.service-consulting .section{
 
 }
 
-@media (max-width: 1100px){
-  .services-grid{ grid-template-columns: repeat(2, 1fr); }
-}
-@media (max-width: 700px){
-  .services-grid{ grid-template-columns: 1fr; }
-}
+
 /* ✅ הסתרת תמונת ה-split במובייל (ניצחון מוחלט) */
 /* התאמה למובייל – הסתרת התמונה */
 
@@ -4629,32 +4567,6 @@ body.service-consulting .service-page .container{
 MOBILE / TABLET RESPONSIVE
 ========================= */
 
-/* טאבלט */
-@media (max-width: 1024px){
-
-  .container{
-    width: min(960px, 92%);
-  }
-
-  /* Services: 2 בעמודה */
-  .services-grid{
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  /* Process layout: עמודה אחת */
-  .process-layout{
-    grid-template-columns: 1fr;
-  }
-
-  .process-right{
-    position: static;
-    top: auto;
-  }
-
-  .process-left{
-    justify-content: center;
-  }
-}
 
 /* מובייל */
 @media (max-width: 700px){
