@@ -20,8 +20,8 @@
   --text-small: 16px;
 
   --text-large-mobile: 42px;
-  --text-normal-mobile: 27px;
-  --text-small-mobile: 22px;
+  --text-normal-mobile: 25px;
+  --text-small-mobile: 19px;
 
 
   --background-main: linear-gradient(135deg, #eef4ee 0%, #dbe8db 100%);
@@ -423,6 +423,32 @@ main{
 
 
 @media (max-width: 768px){
+  .hero-person-tag{
+    position: absolute;
+    top: 114px;
+    left: 0;
+    z-index: 3;
+    background: rgba(255,255,255,0.88);
+    backdrop-filter: blur(6px);
+    padding: 14px 18px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+  }
+  
+  .hero-person-tag strong{
+    display: block;
+    color: #2e5b3c;
+    font-size: var(--text-small-mobile);
+    font-weight: 500;
+    text-align: center;
+  }
+  
+  .hero-person-tag span{
+    display: block;
+    margin-top: 4px;
+    color: #56725e;
+    font-size: var(--text-small-mobile);
+    font-weight: 400;
+  }
 
   .hero-inner{
     grid-template-columns: 1fr;
@@ -496,6 +522,32 @@ main{
 
 }
 @media (max-width: 900px){
+  .hero-person-tag{
+    position: absolute;
+    top: 114px;
+    left: 0;
+    z-index: 3;
+    background: rgba(255,255,255,0.88);
+    backdrop-filter: blur(6px);
+    padding: 14px 18px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+  }
+  
+  .hero-person-tag strong{
+    display: block;
+    color: #2e5b3c;
+    font-size: var(--text-small-mobile);
+    font-weight: 500;
+    text-align: center;
+  }
+  
+  .hero-person-tag span{
+    display: block;
+    margin-top: 4px;
+    color: #56725e;
+    font-size: var(--text-small-mobile);
+    font-weight: 400;
+  }
   .hero-bird{
     width: 50px;
     left: 50%;
@@ -5716,6 +5768,7 @@ border-radius: 18px;
 
 
   
+
 
 
 
