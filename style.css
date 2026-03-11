@@ -427,8 +427,8 @@ main{
     top: 5px;
     margin-left: auto;
     left: auto; 
-    right: 120px;
-    padding: 10px 10px;
+    right: 130px;
+    padding: 5px 5px;
   
   }
  
@@ -436,7 +436,7 @@ main{
     display: block;
     color: #2e5b3c;
     font-size: var(--text-small-mobile);
-    font-weight: 500;
+    font-weight: 600;
     text-align: center;
   }
   
@@ -537,7 +537,7 @@ main{
     width: 70px;
     left: 50%;
     transform: translateX(-50%);
-    top: 40px;
+    top: 70px;
   }
   .hero-bird img{
     width: 70px;
