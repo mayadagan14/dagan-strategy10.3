@@ -424,10 +424,10 @@ main{
 
 @media (max-width: 900px){
   .hero-person-tag{
-    top: 20px;
+    top: 10px;
     margin-left: auto;
     left: auto; 
-    right: 10px; /*20*/
+    right: 20px;
     padding: 12px 16px;
   
   }
