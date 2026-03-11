@@ -426,7 +426,7 @@ main{
   .hero-person-tag{
     top: 5px;
     margin-left: auto;
-    left: 0; /*auto*/
+    left: 2px; /*auto*/
     right: auto; /*130*/
     padding: 5px 5px;
   
@@ -5662,6 +5662,7 @@ border-radius: 18px;
 
 
   
+
 
 
 
