@@ -424,9 +424,9 @@ main{
 
 @media (max-width: 900px){
   .hero-person-tag{
-    top: 25px;
+    top: 5px;
     margin-left: auto;
-    left: 0px; /*auto*/
+    left: 0; /*auto*/
     right: auto; /*130*/
     padding: 5px 5px;
   
@@ -450,7 +450,7 @@ main{
  
 
   .hero{
-    padding: 24px 0 0 0;
+    padding: 24px 0 0;
   }
 
   .hero-inner{
@@ -2140,171 +2140,6 @@ body.service-consulting .service-page .container{
   }
 }
 
-.process-arrows{
-  position: absolute;
-  inset: 0;
-  pointer-events: none;
-}
-
-.arrow-path{
-  fill: none;
-  stroke: rgba(34,86,52,0.25);
-  stroke-width: 2.5;
-  stroke-dasharray: 220;
-  stroke-dashoffset: 220;
-  transition: stroke .3s ease, stroke-dashoffset .4s ease;
-}
-
-.arrow-path.active{
-  stroke: #225634;
-  stroke-dashoffset: 0;
-}
-
-
-
-.step-btn{
-  position: absolute;
-  left: var(--cx);
-  top: var(--cy);
-  width: 150px;
-  height: 90px;
-  border-radius: 14px;
-  border: 7px solid rgba(0,0,0,0.1);
-  background: #fff;
-  box-shadow: 0 12px 30px rgba(0,0,0,0.15);
-  cursor: pointer;
-  z-index: 4;
-  font-weight: 800;
-  transition: transform .2s ease, background .2s ease;
-  text-align: center;
-  transform:
-    translate(-50%,-50%)
-    rotate(var(--ang))
-    translateX(var(--r))
-    rotate(calc(-1 * var(--ang)));
-    display: flex;
-flex-direction: column;
-align-items: center;
-justify-content: center;
-gap: 6px;
-
-font-family: inherit;
-text-align: center;
-
-box-shadow: 0 10px 28px rgba(0,0,0,0.12);
-transition: transform .18s ease, box-shadow .18s ease;
-
-}
-
-.step-btn.active{
-  background: #225634;
-  color: #fff;
-  border: 7px solid rgba(17, 16, 16, 0.83);
-}
-
-/* שמאל – התרשים נשאר עם רוחב קבוע */
-.process-left{
-  width: 100%;
-  
-  display: flex;
-  justify-content: flex-start;
-}
-.process-right{
-  width: 100%;
-  text-align: right;
-}
-
-/* ימין – הקופסה */
-.process-card{
-  padding: 22px;
-  border-radius: 22px;
-  box-shadow: 0 18px 60px rgba(0,0,0,0.12);
-  background: #f4f5f6;
-}
-.process-content{
-  max-height: 420px;      /* תשני לפי מה שנראה לך */
-  overflow: auto;
-  padding-left: 6px;      /* קצת מרווח לגלילה */
-}
-
-
-/* כדי שההסבר “יישב יפה” מול התרשים */
-.process-right{
-  position: sticky;
-  top: 110px; /* שימי 90/120 לפי ההדר */
-}
-
-/* מובייל – מתחת אחד לשני */
-@media (max-width: 980px){
-  .process-layout{
-    grid-template-columns: 1fr;
-  }
-  .process-right{
-      
-    position: static;
-  }
-  .process-left{
-    justify-content: center;
-
-  }
-  .process-title{
-    font-weight: 900;
-    font-size: 25px;}
-}
-
-.form-msg{
-  margin-top: 12px;
-  font-weight: 700;
-}
-.form-msg.ok{
-  color: #166534;
-}
-.circle-center{
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  background: #fff;
-  box-shadow: 0 14px 40px rgba(0,0,0,0.12);
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  overflow: hidden; /* העיגול נשאר נקי */
-}
-
-.circle-center .circle-logo{
-  width: 100% !important;
-  height: 100% !important;
-  padding: 18px;               /* חשוב! נותן “שוליים” ללוגו */
-  box-sizing: border-box;
-  object-fit: contain !important;
-  object-position: center !important;
-  display: block;
-}
-
-.footer-extra{
-  background: rgba(0,0,0,0.15);
-  border-top: 1px solid rgba(255,255,255,0.12);
-}
-
-.footer-extra-inner{
-  max-width: 1200px;
-  height: 80px;
-  margin: auto;
-  padding: 14px 18px;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 14px 22px;
-  justify-content: center;
-  align-items: center;
-  font-size: 16px;
-}
-
 .footer-link{
   color: #e5e7eb;
   text-decoration: none;
@@ -2320,12 +2155,7 @@ transition: transform .18s ease, box-shadow .18s ease;
 .footer-sep{
   opacity: .4;
 }
-/* מובייל */
-@media (max-width: 680px){
-  .footer-extra-inner{
-    gap: 10px 14px;
-  }
-}
+
 .wa-icon{
   width: 16px;
   height: 16px;
@@ -2397,49 +2227,6 @@ MOBILE / TABLET RESPONSIVE
     left: 50%;
     transform: translateX(-50%);
     bottom: 14px;
-  }
-
-  /* PROCESS DIAGRAM: להפוך לגמיש */
-  .process-diagram{
-    width: min(560px, 92vw);
-    height: 360px;
-    margin: 24px auto;
-    --r: 145px; /* להקטין רדיוס במובייל */
-  }
-
-  .step-btn{
-    width: 120px;
-    height: 82px;
-  }
-
-  .circle-center{
-    width: 120px;
-    height: 120px;
-  }
-
-  .process-card{
-    padding: 16px;
-    border-radius: 18px;
-  }
-
-  .process-content{
-    max-height: none;
-    overflow: visible;
-  }
-
-  /* NOTE */
-  .process-note{
-    font-size: 15px;
-    margin-right: 0;
-    padding: 14px 16px;
-  }
-
-  /* FOOTER EXTRA */
-  .footer-extra-inner{
-    height: auto;
-    padding: 12px 14px;
-    font-size: 15px;
-    gap: 10px 14px;
   }
 
   .wa-icon{
@@ -4288,174 +4075,6 @@ body.service-consulting .service-page .container{
   }
 }
 
-.process-diagram{
-  position: relative;
-  width: 560px;
-  height: 400px;
-  margin: 70px auto;
-
-  --cx: 50%;
-  --cy: 50%;
-  --r: 230px;
-}
-
-.step-btn:hover{ transform:
-  translate(-50%,-50%)
-  rotate(var(--ang))
-  translateX(var(--r))
-  rotate(calc(-1 * var(--ang)))
-  scale(1.05);
-}
-
-
-.step-btn[data-step="1"]{ --ang: -90deg; }
-.step-btn[data-step="2"]{ --ang: -30deg; }
-.step-btn[data-step="3"]{ --ang:  30deg; }
-.step-btn[data-step="4"]{ --ang:  90deg; }
-.step-btn[data-step="5"]{ --ang: 150deg; }
-.step-btn[data-step="6"]{ --ang: 210deg; }
-/* אנימציית זרימה */
-
-.process-layout{
-  display: grid;
-  grid-template-columns: 6fr 4fr;
-  align-items: start;
-  margin-top: 18px;
-}
-.process-title{
-  text-align: center;
-  font-weight: 900;
-  font-size: clamp(20px, 4vw, 50px);
-  color:#950d0d ;
-  text-shadow:
-  0 2px 4px rgba(234, 225, 225, 0.966),
-  0 0 12px rgba(244, 239, 239, 0.888);
-}
-
-.process-subtitle{
-  text-align: center;
-  font-weight: 700;
-  text-decoration: underline;
-  font-size: clamp(12px, 4vw, 25px);
-  color:var(--primary2);
-  margin-top: 0;
-}
-/* שמאל – התרשים נשאר עם רוחב קבוע */
-.process-left{
-  width: 100%;
-  
-  display: flex;
-  justify-content: flex-start;
-}
-.process-right{
-  width: 100%;
-  text-align: right;
-}
-
-/* ימין – הקופסה */
-.process-card{
-  padding: 22px;
-  border-radius: 22px;
-  box-shadow: 0 18px 60px rgba(0,0,0,0.12);
-  background: #f4f5f6;
-}
-.process-content{
-  max-height: 420px;      /* תשני לפי מה שנראה לך */
-  overflow: auto;
-  padding-left: 6px;      /* קצת מרווח לגלילה */
-}
-
-
-/* כדי שההסבר “יישב יפה” מול התרשים */
-.process-right{
-  position: sticky;
-  top: 110px; /* שימי 90/120 לפי ההדר */
-}
-
-/* מובייל – מתחת אחד לשני */
-@media (max-width: 980px){
-  .process-layout{
-    grid-template-columns: 1fr;
-  }
-  .process-right{
-      
-    position: static;
-  }
-  .process-left{
-    justify-content: center;
-
-  }
-  .process-title{
-    font-weight: 900;
-    font-size: 25px;}
-}
-/* אחידות פונט בתרשים */
-.process-diagram{
-  font-family: "Heebo", system-ui, -apple-system, Arial, sans-serif !important;
-}
-.process-diagram *{
-  font-family: inherit !important;
-}
-
-
-/* לוודא שגם כפתורי השלבים זהים לשאר האתר */
-
-.step-btn strong{
-  font-size: 22px;
-  font-weight: 900;
-  line-height: 1;
-}
-
-.form-msg{
-  margin-top: 12px;
-  font-weight: 700;
-}
-.form-msg.ok{
-  color: #166534;
-}
-.circle-center{
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  width: 250px;
-  height: 250px;
-  border-radius: 50%;
-  background: #a6cff1;
-  box-shadow: 0 14px 40px rgba(0,0,0,0.12);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden; /* העיגול נשאר נקי */
-}
-
-.circle-center .circle-logo{
-  width: 100% !important;
-  height: 100% !important;
-  padding: 18px;               /* חשוב! נותן “שוליים” ללוגו */
-  box-sizing: border-box;
-  object-fit: contain !important;
-  object-position: center !important;
-  display: block;
-}
-
-.process-note{
-  margin-top: 64px;
-  font-size: 18px;
-  align-items: center;
-  text-align: center;
-  line-height: 1.9;
-  margin-right: 120px;
-  color: #081e42;
-  font-weight: 700;
-
-  text-shadow:
-  0 2px 4px rgba(249, 243, 243, 0.966),
-  0 0 12px rgba(193, 186, 186, 0.995);
-}
-.process-note .b{
-  font-weight: 1100;
-}
 .footer-extra{
   background: rgba(0,0,0,0.15);
   border-top: 1px solid rgba(255,255,255,0.12);
@@ -4848,16 +4467,7 @@ main.realestate-page{
   line-height: 1.8;
   color: var(--text);
 }
-.image-360{
-  position: relative;
-  height: 370px;
-  min-height: 260px;
-  background: url("./images/financial-plan.jpg") center/cover no-repeat;
 
-  justify-content: center;
-  align-items: flex-start; /* מתחילים מלמעלה */
-  overflow: hidden;
-}
 
 .retainer-hero{
   position: relative;
@@ -5584,48 +5194,6 @@ border-radius: 18px;
 }
 }
 
-@media (max-width: 980px){
-.process360-wrap{
-  grid-template-columns: 1fr;
-  gap: 18px;
-}
-
-.process360-center{
-  min-height: 280px;
-  order: -1; /* המרכז למעלה */
-}
-
-.p360-ring{
-  width: 300px;
-  height: 300px;
-}
-
-.p360-core{
-  width: 220px;
-  height: 220px;
-}
-.process360-title{
-  font-weight: 900;
-  font-size: 26px;
-  
-}
-
-.p360-core-title{
-  font-size: 20px;
-}
-.image-360{
-  align-items: center;
- 
-}
-
-.process360-col{
-  max-width: 520px;
-  width: 100%;
-  margin: 0 auto;
-}
-}
-/* ===== Floating WhatsApp (Desktop + Mobile) ===== */
-/* ===== Floating WhatsApp – round icon ===== */
 /* ===== Floating WhatsApp (image) ===== */
 .topwhatmobile{
   display: none;
@@ -5660,8 +5228,424 @@ border-radius: 18px;
   
 }
 
+/* ================================
+   PROCESS / TIMELINE SECTION
+================================ */
 
-  
+.timeline-section-wrap{
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 40px;
+  align-items: start;
+  margin-top: 30px;
+}
+
+/* ===== ציר הזמן במרכז ===== */
+.timeline-center{
+  position: relative;
+  max-width: 950px;
+  margin: 0 auto;
+  padding: 20px 0 10px;
+}
+
+/* הקו המרכזי */
+.timeline-center::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 4px;
+  background: #d7e2d7;
+  border-radius: 999px;
+  z-index: 0;
+}
+
+/* כל שלב */
+.timeline-step{
+  position: relative;
+  width: 100%;
+  min-height: 190px;
+  display: block;
+  background: transparent;
+  border: 0;
+  padding: 0;
+  margin: 0 0 26px;
+  cursor: pointer;
+  text-align: right;
+  font-family: inherit;
+  opacity: 0.45;
+  transform: translateY(30px);
+  transition: opacity .45s ease, transform .45s ease;
+}
+
+.timeline-step.visible{
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.timeline-step.active{
+  opacity: 1;
+}
+
+/* קופסת השלב */
+.timeline-card-mini{
+  position: relative;
+  width: calc(55% - 94px);
+  background: #ffffff;
+  border-radius: 28px;
+  padding: 28px 30px;
+  box-shadow: 0 10px 28px rgba(0,0,0,0.08);
+  border: 2px solid transparent;
+  transition: transform .25s ease, box-shadow .25s ease, border-color .25s ease;
+  z-index: 1;
+}
+
+.timeline-card-mini h3{
+  margin: 0 0 10px;
+  color: var(--primary);
+  font-size: 32px;
+  font-weight: 800;
+  line-height: 1.2;
+  text-align: center;
+}
+
+.timeline-card-mini p{
+  margin: 0;
+  color: #58655c;
+  font-size: 18px;
+  line-height: 1.8;
+  font-weight: 500;
+}
+
+/* זיגזג */
+.timeline-step.left .timeline-card-mini{
+  margin-left: 0;
+  margin-right: auto;
+}
+
+.timeline-step.right .timeline-card-mini{
+  margin-right: 0;
+  margin-left: auto;
+}
+
+/* מספר על הציר */
+.timeline-dot{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  background: #3d7a4a;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 32px;
+  font-weight: 800;
+  box-shadow: 0 10px 28px rgba(0,0,0,0.14);
+  z-index: 2;
+  transition: transform .25s ease, background .25s ease, box-shadow .25s ease;
+}
+
+/* חץ קטן לקו */
+.timeline-card-mini::after{
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 18px;
+  height: 18px;
+  background: #ffffff;
+  transform: translateY(-50%) rotate(45deg);
+  z-index: 1;
+}
+
+.timeline-step.left .timeline-card-mini::after{
+  right: -9px;
+}
+
+.timeline-step.right .timeline-card-mini::after{
+  left: -9px;
+}
+
+/* Hover */
+.timeline-step:hover .timeline-card-mini{
+  transform: translateY(-3px);
+  box-shadow: 0 15px 34px rgba(0,0,0,0.11);
+}
+
+/* Active */
+.timeline-step.active .timeline-card-mini{
+  border-color: #8bc53f;
+  box-shadow: 0 16px 36px rgba(127,191,63,0.18);
+  transform: scale(1.02);
+}
+
+.timeline-step.active .timeline-dot{
+  background: #8bc53f;
+  transform: translate(-50%, -50%) scale(1.08);
+  box-shadow: 0 14px 34px rgba(127,191,63,0.24);
+}
+
+/* ===== בוקס התוכן הגדול ===== */
+.process-detail-box{
+  position: sticky;
+  top: 110px;
+}
+
+.process-detail-box .process-content{
+  background: #ffffff;
+  border-radius: 28px;
+  padding: 30px;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.08);
+  min-height: 420px;
+  max-height: 580px;
+  overflow: auto;
+  transition: opacity .2s ease;
+}
+
+.process-content h3{
+  margin: 0 0 16px;
+  color: var(--primary);
+  font-size: 34px;
+  font-weight: 800;
+  line-height: 1.2;
+}
+
+.process-content p{
+  margin: 0 0 18px;
+  color: #223028;
+  font-size: 18px;
+  line-height: 1.95;
+}
+
+.process-content strong{
+  font-weight: 800;
+}
+
+/* ===== כותרות כלליות אם תרצי ===== */
+.process-title{
+  text-align: center;
+  color: var(--primary);
+  font-size: clamp(30px, 4vw, 48px);
+  font-weight: 800;
+  margin-bottom: 12px;
+}
+
+.process-subtitle{
+  text-align: center;
+  color: #6b8b74;
+  font-size: 18px;
+  margin-bottom: 34px;
+}
+
+/* ===== אנימציה עדינה לתוכן ===== */
+@keyframes fadeStep{
+  from{
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to{
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.process-content.is-animating{
+  animation: fadeStep .35s ease;
+}
+
+/* ================================
+   TABLET
+================================ */
+@media (max-width: 1100px){
+
+  .timeline-section-wrap{
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+
+  .process-detail-box{
+    position: static;
+  }
+
+  .process-detail-box .process-content{
+    min-height: auto;
+    max-height: none;
+  }
+
+  .timeline-card-mini{
+    width: calc(50% - 54px);
+    padding: 24px 24px;
+  }
+
+  .timeline-card-mini h3{
+    font-size: 26px;
+  }
+
+  .timeline-card-mini p{
+    font-size: 16px;
+    line-height: 1.7;
+  }
+
+  .timeline-dot{
+    width: 62px;
+    height: 62px;
+    font-size: 28px;
+  }
+
+  .process-content h3{
+    font-size: 28px;
+  }
+
+  .process-content p{
+    font-size: 17px;
+    line-height: 1.85;
+  }
+}
+
+/* ================================
+   MOBILE
+================================ */
+@media (max-width: 768px){
+
+  .timeline-center{
+    padding: 10px 0;
+  }
+
+  .timeline-center::before{
+    left: 24px;
+    transform: none;
+  }
+
+  .timeline-step{
+    min-height: auto;
+    padding-bottom: 18px;
+    margin-bottom: 4px;
+  }
+
+  .timeline-card-mini{
+    width: calc(100% - 64px);
+    margin-right: 0 !important;
+    margin-left: auto !important;
+    padding: 18px 16px;
+    border-radius: 18px;
+  }
+
+  .timeline-card-mini h3{
+    font-size: 22px;
+    margin-bottom: 8px;
+  }
+
+  .timeline-card-mini p{
+    font-size: 15px;
+    line-height: 1.7;
+  }
+
+  .timeline-dot{
+    width: 44px;
+    height: 44px;
+    font-size: 20px;
+    left: 24px;
+    transform: translate(-50%, -50%);
+  }
+
+  .timeline-step.active .timeline-dot{
+    transform: translate(-50%, -50%) scale(1.06);
+  }
+
+  .timeline-card-mini::after{
+    left: -8px !important;
+    right: auto !important;
+    width: 16px;
+    height: 16px;
+  }
+
+  .process-detail-box .process-content{
+    padding: 20px 16px;
+    border-radius: 20px;
+  }
+
+  .process-content h3{
+    font-size: 24px;
+  }
+
+  .process-content p{
+    font-size: 16px;
+    line-height: 1.8;
+  }
+
+  .process-subtitle{
+    font-size: 16px;
+    margin-bottom: 24px;
+  }
+}
+
+/* ================================
+   SMALL MOBILE
+================================ */
+@media (max-width: 480px){
+
+  .timeline-card-mini{
+    width: calc(100% - 58px);
+    padding: 16px 14px;
+  }
+
+  .timeline-card-mini h3{
+    font-size: 19px;
+  }
+
+  .timeline-card-mini p{
+    font-size: 14px;
+  }
+
+  .timeline-dot{
+    width: 40px;
+    height: 40px;
+    font-size: 18px;
+    left: 22px;
+  }
+
+  .process-detail-box .process-content{
+    padding: 18px 14px;
+  }
+
+  .process-content h3{
+    font-size: 21px;
+  }
+
+  .process-content p{
+    font-size: 15px;
+  }
+}
+.process-content{
+  transition: opacity .2s ease;
+}
+
+.process-content.is-animating{
+  animation: fadeStep .35s ease;
+}
+
+@keyframes fadeStep{
+  from{
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to{
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@media (max-width: 768px){
+  .timeline-center::before,
+  .timeline-progress{
+    left: 24px;
+    transform: none;
+  }
+}
 
 
 
@@ -5673,8 +5657,253 @@ border-radius: 18px;
 
 
 
+.service-hero-clean{
+  position: relative;
+  background:
+    radial-gradient(circle at top right, rgba(139,197,63,0.10), transparent 28%),
+    linear-gradient(180deg, #f7faf7 0%, #eef4ee 100%);
+  padding: 90px 0 70px;
+  overflow: hidden;
+}
 
+.service-hero-clean::before{
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(to left, rgba(255,255,255,0.22), rgba(255,255,255,0));
+  pointer-events: none;
+}
 
+.service-hero-inner{
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: 1.1fr 0.75fr;
+  gap: 50px;
+  align-items: center;
+}
 
+.service-hero-content{
+  max-width: 760px;
+}
 
+.service-hero-kicker{
+  margin: 0 0 14px;
+  color: #6d8873;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+}
 
+.service-hero-title{
+  margin: 0 0 14px;
+  color: var(--primary);
+  font-size: clamp(40px, 5vw, 72px);
+  line-height: 1.02;
+  font-weight: 800;
+}
+
+.service-hero-subtitle{
+  margin: 0 0 20px;
+  color: #315b3d;
+  font-size: clamp(22px, 2.3vw, 34px);
+  line-height: 1.25;
+  font-weight: 700;
+}
+
+.service-hero-text{
+  margin: 0;
+  max-width: 680px;
+  color: #46554c;
+  font-size: 19px;
+  line-height: 1.95;
+  font-weight: 500;
+}
+
+.service-hero-meta{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 28px;
+}
+
+.service-hero-meta span{
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 16px;
+  border-radius: 999px;
+  background: rgba(255,255,255,0.75);
+  border: 1px solid rgba(46,91,60,0.10);
+  color: #4f6857;
+  font-size: 14px;
+  font-weight: 700;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.04);
+}
+
+.service-hero-actions{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-top: 32px;
+}
+
+.service-hero-actions .btn{
+  min-width: 180px;
+  justify-content: center;
+}
+
+/* צד שני */
+.service-hero-side{
+  display: flex;
+  justify-content: center;
+}
+
+.service-hero-card{
+  position: relative;
+  width: 100%;
+  max-width: 360px;
+  min-height: 330px;
+  border-radius: 34px;
+  background: rgba(255,255,255,0.82);
+  border: 1px solid rgba(46,91,60,0.10);
+  box-shadow: 0 18px 40px rgba(0,0,0,0.07);
+  backdrop-filter: blur(8px);
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.service-hero-badge{
+  width: 108px;
+  height: 108px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #8bc53f, #4d8a55);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 36px;
+  font-weight: 800;
+  box-shadow: 0 16px 28px rgba(139,197,63,0.25);
+  align-self: flex-end;
+}
+.hero-logo-bird{
+  position:absolute;
+  top:70px;
+  right:45px;
+  width:110px;
+
+}
+
+.service-heros-card-line{
+  height: 12px;
+  width: 72%;
+  background: linear-gradient(to left, rgba(77,138,85,0.25), rgba(77,138,85,0.08));
+  border-radius: 999px;
+}
+
+.service-hero-card-line.short{
+  width: 44%;
+}
+
+.service-hero-mini-list{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.service-hero-mini-list span{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 54px;
+  border-radius: 18px;
+  background: #f7faf7;
+  color: var(--primary);
+  font-size: 15px;
+  font-weight: 700;
+  border: 1px solid rgba(46,91,60,0.10);
+}
+
+/* מובייל וטאבלט */
+@media (max-width: 1100px){
+  .service-hero-inner{
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+
+  .service-hero-content{
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .service-hero-text{
+    max-width: 100%;
+    margin-inline: auto;
+  }
+
+  .service-hero-meta{
+    justify-content: center;
+  }
+
+  .service-hero-actions{
+    justify-content: center;
+  }
+
+  .service-hero-side{
+    order: 2;
+  }
+}
+
+@media (max-width: 768px){
+  .service-hero-clean{
+    padding: 60px 0 48px;
+  }
+
+  .service-hero-kicker{
+    font-size: 13px;
+  }
+
+  .service-hero-subtitle{
+    font-size: 24px;
+  }
+
+  .service-hero-text{
+    font-size: 16px;
+    line-height: 1.8;
+  }
+
+  .service-hero-meta{
+    gap: 10px;
+  }
+
+  .service-hero-meta span{
+    font-size: 13px;
+    padding: 9px 12px;
+  }
+
+  .service-hero-card{
+    max-width: 100%;
+    min-height: 280px;
+    padding: 22px;
+    border-radius: 24px;
+  }
+
+  .service-hero-badge{
+    width: 84px;
+    height: 84px;
+    font-size: 28px;
+  }
+
+  .service-hero-mini-list{
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .service-hero-mini-list span{
+    min-height: 46px;
+    font-size: 14px;
+  }
+}
