@@ -5860,11 +5860,14 @@ border-radius: 18px;
   }
 
   .service-hero-side{
-    order: 2;
+    display: none;
   }
 }
 
 @media (max-width: 768px){
+  .service-hero-side{
+    display: none;
+  }
   .service-hero-clean{
     padding: 60px 0 48px;
   }
