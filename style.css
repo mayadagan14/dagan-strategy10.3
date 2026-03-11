@@ -540,12 +540,6 @@ main{
     max-width: 80vw;
     margin: 40px auto 0;
   }
-
-  .hero-person-tag{
-    position: static;
-    margin: 12px auto 0;
-    text-align: center;
-  }
   
   .hero-bird{
     width: 70px;
