@@ -425,10 +425,10 @@ main{
 @media (max-width: 900px){
   .hero-person-tag{
     position: absolute;
-    top: 100px;
+    top: 50px;
     margin-left: auto;
     left: auto; 
-    right: 20px;
+    right: 0px; /*20*/
     z-index: 3;
     background: rgba(255,255,255,0.88);
     backdrop-filter: blur(6px);
@@ -972,9 +972,11 @@ margin-bottom: 180px;
   background: #f0f5f1;
   border-radius: 22px;
   padding: 0 10px  10px;
-  height: 580px
+  height: 458px;
+  padding: 0 10px 87px 10px;
   
 }
+
 
 .service-box::before{
   content:"";
@@ -1002,7 +1004,7 @@ margin-bottom: 180px;
 .service-box p{
   margin: 0 0 18px;
   color: #475569;
-  font-size: var(--text-small);
+  font-size: var(--text-normal);
 }
 .service-icon{
   width: 56px;
