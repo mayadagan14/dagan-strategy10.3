@@ -2883,29 +2883,51 @@ line-height: 1.7;
 
 @media (max-width: 900px) {
   .blog-carousel {
-    gap: 10px;
+    gap: 8px;
+    align-items: center;
+  }
+
+  .blog-viewport {
+    width: calc(100vw - 92px);
+    max-width: calc(100vw - 92px);
+    overflow: hidden;
   }
 
   .blog-track {
-    gap: 18px;
+    gap: 14px;
   }
 
   .post-card {
     flex: 0 0 100%;
     max-width: 100%;
+    min-height: unset;
+    border-width: 10px;
   }
 
   .post-thumb {
-    height: 220px;
+    height: 200px;
+  }
+
+  .post-body {
+    padding: 18px 14px 22px;
+  }
+
+  .post-title {
+    font-size: 1.45rem;
+    line-height: 1.35;
+  }
+
+  .post-excerpt {
+    font-size: 0.98rem;
+    line-height: 1.6;
   }
 
   .blog-arrow {
-    width: 44px;
-    height: 44px;
-    font-size: 24px;
+    width: 40px;
+    height: 40px;
+    font-size: 22px;
   }
 }
-
 
 
 /* ===== Post page ===== */
