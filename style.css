@@ -2882,6 +2882,10 @@ line-height: 1.7;
 }
 
 @media (max-width: 900px) {
+  .h3{
+    font-size: 18px;
+
+  }
   .blog-carousel {
     gap: 8px;
     align-items: center;
@@ -5560,16 +5564,7 @@ padding-bottom: 30px;
 }
 
 
-
-
-
-
-
-
-
-
-
-/* */
+/* כתבה 3*/
 .article-page {
   padding: 48px 0 70px;
   background: var(--background-main);
@@ -5945,6 +5940,29 @@ padding-bottom: 30px;
   .article-cta-box {
     padding: 18px 16px;
     
+  }
+  .countries-grid{
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    gap: 14px;
+    padding: 0 12px;
+    -webkit-overflow-scrolling: touch;
+  
+  }
+  .returns-grid{
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    gap: 14px;
+    padding: 0 12px;
+    -webkit-overflow-scrolling: touch;
+  }
+  .returns-grid::-webkit-scrollbar{
+    display: none;
+  }
+  .countries-grid::-webkit-scrollbar{
+    display: none;
   }
 }
 
