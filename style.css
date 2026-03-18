@@ -1693,8 +1693,8 @@ ABOUT PAGE
     right: 50%;
     bottom: 0;
     transform: translateX(50%);
-    width: 360px;
-    max-width: 92vw;
+    width: 460px;
+    
   }
 
   .about-page .about-hero-photo img{
@@ -1752,7 +1752,7 @@ ABOUT PAGE
   .about-page .about-hero-actions a,
   .about-page .about-hero-actions button{
     width: 100%;
-    justify-content: center;
+  
   }
 
   /* Cards / content */
