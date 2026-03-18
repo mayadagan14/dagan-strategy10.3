@@ -1662,7 +1662,126 @@ ABOUT PAGE
   
 }
   
+@media (max-width: 768px){
 
+  .about-page,
+  .about-page main{
+    overflow-x: hidden;
+  }
+
+  /* HERO */
+  .about-page .about-hero{
+    min-height: auto;
+  }
+
+  .about-hero-overlay{
+    background: linear-gradient(
+      to bottom,
+      rgba(255,255,255,0.92) 0%,
+      rgba(255,255,255,0.82) 38%,
+      rgba(255,255,255,0.55) 68%,
+      rgba(255,255,255,0.15) 100%
+    );
+  }
+
+  .about-page .about-hero-inner{
+    padding: 28px 18px 340px;
+    text-align: center;
+  }
+
+  .about-page .about-hero-photo{
+    right: 50%;
+    bottom: 0;
+    transform: translateX(50%);
+    width: 360px;
+    max-width: 92vw;
+  }
+
+  .about-page .about-hero-photo img{
+    width: 100%;
+    height: auto;
+    filter: drop-shadow(0 14px 28px rgba(25, 104, 55, 0.35));
+  }
+
+  .about-page .about-hero-title{
+    font-size: clamp(30px, 9vw, 42px);
+    line-height: 1.15;
+    margin: 0 0 16px;
+    text-align: center;
+    text-shadow: 0 6px 18px rgba(0,0,0,0.22);
+  }
+
+  .about-page .about-hero-copy{
+    text-align: center;
+  }
+
+  .about-page .about-hero-lead{
+    font-size: 1rem;
+    line-height: 1.8;
+    margin: 0 0 18px;
+    text-shadow: 0 4px 14px rgba(0,0,0,0.18);
+  }
+
+  .about-page .about-hero-bullets{
+    max-width: 100%;
+    margin: 0 0 18px;
+    text-align: right;
+  }
+
+  .about-page .about-hero-bullets li{
+    font-size: 0.98rem;
+    line-height: 1.7;
+    padding-right: 26px;
+    margin: 10px 0;
+    text-shadow: none;
+  }
+
+  .about-page .about-hero-bullets li::before{
+    width: 10px;
+    height: 10px;
+    top: 0.95em;
+  }
+
+  .about-page .about-hero-actions{
+    flex-direction: column;
+    align-items: stretch;
+    gap: 10px;
+    margin-top: 18px;
+  }
+
+  .about-page .about-hero-actions a,
+  .about-page .about-hero-actions button{
+    width: 100%;
+    justify-content: center;
+  }
+
+  /* Cards / content */
+  .about-page .card{
+    margin-bottom: 22px;
+    padding: 20px 16px;
+  }
+
+  .about-page .card p{
+    font-size: 1rem;
+    line-height: 1.8;
+  }
+
+  .about-page .card > *:last-child{
+    margin-bottom: 0 !important;
+  }
+
+  .about-page .about-title{
+    font-size: 1.45rem;
+    line-height: 1.35;
+    margin-bottom: 12px;
+  }
+
+  .about-page .about-subtitle{
+    font-size: 1.05rem;
+    line-height: 1.5;
+    margin-bottom: 12px;
+  }
+}
 
 
 /* ===== Footer logo ===== */
