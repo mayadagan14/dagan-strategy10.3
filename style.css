@@ -1684,9 +1684,9 @@ ABOUT PAGE
     );
   }
 
-  .about-page .about-hero-inner{
-    padding: 28px 18px 340px;
-    text-align: center;
+    .about-page .about-hero-inner{
+      padding: 28px 18px 20px;
+  
   }
 
   .about-page .about-hero-photo{
