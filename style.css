@@ -80,6 +80,11 @@ main{
   
 }
 
+@media (max-width:768px){
+  .main{
+    padding-top: 78px;
+  }
+}
 
 .container{
   width:min(95%, 100%);
@@ -1693,8 +1698,12 @@ ABOUT PAGE
     right: 20%;
     bottom: 0;
     transform: translateX(50%);
+
     
-    
+  }
+  .site-footer{
+    position: static !important;
+    margin-top: 40px;
   }
 
   .about-page .about-hero-photo img{
