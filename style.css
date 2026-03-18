@@ -1690,15 +1690,15 @@ ABOUT PAGE
   }
 
   .about-page .about-hero-photo{
-    right: 50%;
+    right: 20%;
     bottom: 0;
     transform: translateX(50%);
-    width: 460px;
+    
     
   }
 
   .about-page .about-hero-photo img{
-    width: 100%;
+    width: 50%;
     height: auto;
     filter: drop-shadow(0 14px 28px rgba(25, 104, 55, 0.35));
   }
@@ -1751,7 +1751,7 @@ ABOUT PAGE
 
   .about-page .about-hero-actions a,
   .about-page .about-hero-actions button{
-    width: 100%;
+    width: 40%;
   
   }
 
