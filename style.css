@@ -1687,16 +1687,22 @@ ABOUT PAGE
   
   }
 
-  .about-page .about-hero-photo{
-    right: 0;
-    bottom: 0;
-  }
 
+  .about-page .about-hero-photo{
+    left: 0;        /* ⬅️ במקום right */
+    right: auto;    /* חשוב! מבטל את הימין */
+    bottom: 0;
+  
+    width: 55%;
+    max-width: 220px;
+    z-index: 1;
+  }
   .about-page .about-hero-photo img{
-    width: 50%;
+    width: 100%;
     height: auto;
     filter: drop-shadow(0 14px 28px rgba(25, 104, 55, 0.35));
   }
+
 
   .about-page .about-hero-title{
     font-size: clamp(30px, 9vw, 42px);
