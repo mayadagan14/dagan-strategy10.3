@@ -2760,6 +2760,58 @@ to{ opacity: 1; transform: translateY(0); }
 }
 @media (max-width: 768px){
 
+  .retainer-page .grid-2{
+    grid-template-columns: 1fr;
+    gap: 16px;
+    justify-content: stretch;
+  }
+
+  .retainer-page .service-card{
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    padding: 20px 16px;
+    border-radius: 18px;
+    margin: 0;
+    box-sizing: border-box;
+  }
+
+  .retainer-page .service-card p{
+    font-size: 15px;
+    line-height: 1.8;
+  }
+
+  .retainer-page .service-title{
+    font-size: 21px;
+    line-height: 1.35;
+    margin-bottom: 10px;
+  }
+
+  .retainer-page .service-intro{
+    font-size: 16px;
+    line-height: 1.7;
+    margin-bottom: 14px;
+  }
+
+  .retainer-page .service-list{
+    margin-top: 14px;
+  }
+
+  .retainer-page .service-list li{
+    font-size: 15px;
+    line-height: 1.75;
+    padding-right: 20px;
+    margin: 8px 0;
+  }
+
+  .retainer-page .section.alt .service-card{
+    opacity: 1;
+    transform: none;
+    animation: none;
+  }
+}
+@media (max-width: 768px){
+
   .retainer-hero{
     min-height: auto;
     padding: 56px 18px 42px;
