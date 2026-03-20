@@ -5420,8 +5420,7 @@ border-radius: 18px;
 
   /* ================= FOOTER ================= */
 
-  .site-footer,
-  .footer-extra{
+  .site-footer{
     position: static !important;
     width: 100%;
   }
@@ -5454,7 +5453,7 @@ border-radius: 18px;
     gap: 10px;
   }
 
-  .footer-extra-inner{
+  /*.footer-extra-inner{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -5472,7 +5471,7 @@ border-radius: 18px;
   }
 
   /* ================= FLOATING WHATSAPP ================= */
-
+/*
   .topwhatmobile{
     position: fixed;
     right: 12px;
@@ -5485,7 +5484,7 @@ border-radius: 18px;
     height: 56px;
     display: block;
     border-radius: 50%;
-  }
+  }*/
 }
 /* =================service-consulting ================= */
 
@@ -5591,62 +5590,84 @@ body.service-consulting{
   min-width: 180px;
   justify-content: center;
 }
+@media (max-width: 768px){
 
-/* מובייל וטאבלט */
-@media (max-width: 1100px){
+  .consulting-hero{
+    padding: 56px 0 42px;
+    background-position: center center;
+  }
+
+  .consulting-hero::before{
+    background: linear-gradient(
+      rgba(245,248,245,0.78),
+      rgba(240,241,240,0.88)
+    );
+  }
+
   .consulting-hero-inner{
-    grid-template-columns: 1fr;
-    gap: 28px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
   }
 
   .consulting-hero-content{
+    margin-right: 0;
     max-width: 100%;
     text-align: center;
-  }
-
-  .explain{
-    max-width: 100%;
-    margin-inline: auto;
-  }
-
-  .consulting-hero-meta{
-    justify-content: center;
-  }
-
-  .consulting-hero-actions{
-    justify-content: center;
-  }
-
-}
-
-@media (max-width: 768px){
- 
-  .consulting-hero{
-    padding: 60px 0 48px;
+    padding: 0 6px;
   }
 
   .consulting-hero-kicker{
-    font-size: 13px;
+    font-size: 12px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+  }
+
+  .consulting-hero-title{
+    font-size: clamp(32px, 9vw, 46px);
+    line-height: 1.1;
+    margin: 0 0 12px;
   }
 
   .section-subtitle{
-    font-size: 24px;
+    font-size: 20px;
+    line-height: 1.35;
+    margin: 0 0 14px;
   }
 
   .explain{
-    font-size: 16px;
+    font-size: 15px;
     line-height: 1.8;
+    max-width: 100%;
+    margin: 0 auto;
   }
 
   .consulting-hero-meta{
-    gap: 10px;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 18px;
+    margin-bottom: 12px;
   }
 
   .consulting-hero-meta span{
-    font-size: 13px;
-    padding: 9px 12px;
+    font-size: 12px;
+    line-height: 1.4;
+    padding: 8px 12px;
   }
- 
+
+  .consulting-hero-actions{
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+  }
+
+  .consulting-hero-actions .btn{
+    width: 100%;
+    max-width: 320px;
+    min-width: 0;
+  }
 }
 
 .why-personas{
