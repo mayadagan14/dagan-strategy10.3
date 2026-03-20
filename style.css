@@ -4328,11 +4328,6 @@ body.faq-page .faq-cta p{
   opacity: .4;
 }
 /* מובייל */
-@media (max-width: 680px){
-  .footer-extra-inner{
-    gap: 10px 14px;
-  }
-}
 
 
 .wa-icon{
@@ -5640,98 +5635,33 @@ border-radius: 18px;
 
   /* ================= FOOTER ================= */
 
-  .site-footer{
-    position: static !important;
-    width: 100%;
+  @media (max-width: 768px){
+    .footer-extra-inner{
+      height: auto;
+      padding: 16px 12px;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 10px;
+      align-items: center;
+      justify-items: center;
+      text-align: center;
+    }
+  
+    .footer-extra-inner > *{
+      width: 100%;
+    }
+  
+    .footer-extra-inner a,
+    .footer-extra-inner span,
+    .footer-extra-inner p{
+      font-size: 12.5px;
+      line-height: 1.5;
+    }
+  
+    .footer-extra-inner .footer-sep{
+      display: none;
+    }
   }
-
-  .footer-inner{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    gap: 18px;
-  }
-
-  .footer-left,
-  .footer-logo,
-  .footer-links{
-    width: 100%;
-    max-width: 100%;
-  }
-
-  .footer-logo img{
-    max-width: 120px;
-    height: auto;
-    display: block;
-    margin: 0 auto;
-  }
-
-  .footer-links{
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-  }
-
-
-  .footer-sep{
-    display: none;
-  }
-
-  .footer-link{
-    display: block;
-    width: 100%;
-  }
-
-  /* ================= FLOATING WHATSAPP ================= */
-
-  .topwhatmobile{
-    position: fixed;
-    right: 12px;
-    bottom: 12px;
-    z-index: 999;
-  }
-
-  .wa-img{
-    width: 56px;
-    height: 56px;
-    display: block;
-    border-radius: 50%;
-  }
-}
-
-@media (max-width: 768px){
-
-  .footer-extra-inner{
-    height: auto; /* ⬅️ מבטל גובה קבוע */
-    padding: 16px 12px;
-
-    display: grid; /* ⬅️ במקום flex */
-    grid-template-columns: repeat(3, 1fr); /* 3 בעמודה */
-    gap: 10px 8px; /* רווחים שווים */
-
-    justify-items: center;
-    align-items: center;
-    text-align: center;
-  }
-
-  .footer-extra-inner > *{
-    width: 100%;
-  }
-
-  .footer-extra-inner a,
-  .footer-extra-inner span,
-  .footer-extra-inner p{
-    font-size: 12.5px;
-    line-height: 1.5;
-  }
-
-}
-@media (max-width: 768px){
-  .footer-extra-inner .separator{
-    display: none;
-  }
-}
 /* =================service-consulting ================= */
 
 body.service-consulting{
