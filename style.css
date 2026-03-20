@@ -82,7 +82,7 @@ main{
 
 @media (max-width:768px){
   main{
-    padding-top: 10px;
+    padding-top: 0px;
   }
 }
 
@@ -1694,7 +1694,7 @@ ABOUT PAGE
     bottom: 0;
   
     width: 55%;
-    max-width: 220px;
+    max-width: 420px;
     z-index: 1;
   }
   .about-page .about-hero-photo img{
