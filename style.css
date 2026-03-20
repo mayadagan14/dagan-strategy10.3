@@ -433,7 +433,7 @@ main{
 
 @media (max-width: 900px){
   .hero-person-tag{
-    top: 5px;
+    top: 220px;
     margin-left: auto;
     left: 0; /*auto*/
     right: auto; /*130*/
