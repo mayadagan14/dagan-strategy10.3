@@ -2590,53 +2590,6 @@ main.realestate-page{
     min-width: 180px;
     justify-content: center;
   }
-  
-  /* מובייל וטאבלט */
-  @media (max-width: 1100px){
-    .retainer-hero-inner{
-      grid-template-columns: 1fr;
-      gap: 28px;
-    }
-  
-    .retainer-hero-content{
-      max-width: 100%;
-      text-align: center;
-    }
-  
-    .retainer-hero-meta{
-      justify-content: center;
-    }
-  
-    .retainer-hero-actions{
-      justify-content: center;
-    }
-  
-  }
-  
-  @media (max-width: 768px){
-   
-    .retainer-hero{
-      padding: 60px 0 48px;
-    }
-  
-    .retainer-hero-kicker{
-      font-size: 13px;
-    }
-  
-   .retainer-hero-subtitle{
-      font-size: 24px;
-    }
-  
-    .retainer-hero-meta{
-      gap: 10px;
-    }
-  
-    .retainer-hero-meta span{
-      font-size: 13px;
-      padding: 9px 12px;
-    }
-   
-  }
 
 
 .retainer-page .grid-2{
@@ -2709,33 +2662,6 @@ opacity: 0.9;
 }
 
 
-/* רספונסיבי */
-@media (max-width: 900px) {
-  .retainer-page .grid-2{ grid-template-columns: 1fr; gap: 2px;
-    padding-top: 10px; }
-  
-}
-@media (max-width: 420px){
-  .retainer-hero{
-  
-    min-height: 230px;
-  }
-  .retainer-page .service-card {
-    height: auto;
-    margin-top: 10px;
-  }
-  .retainer-page .retainer-hero .container p{
-    font-size: 15px;
-    font-weight: 400;
-  }
-  
-  .retainer-page .section-subtitle{
-    font-weight: 600;
-    color: var(--primary2);
-    font-size: 20px;
-  }
-  
-}
 .retainer-page .section.alt{
   position: relative;  /* כדי שהחץ ימדד מה-section הזה */
   overflow: hidden;    
@@ -2826,7 +2752,71 @@ to{ opacity: 1; transform: translateY(0); }
   padding-top: 2px;  /* תכווני עד שזה יושב מושלם */
 }
 }
+@media (max-width: 768px){
 
+  .retainer-hero{
+    min-height: auto;
+    padding: 56px 18px 42px;
+    background-position: center center;
+    background-size: cover;
+  }
+
+  .retainer-hero::before{
+    background: linear-gradient(
+      rgba(244,245,244,0.90),
+      rgba(236,242,236,0.72)
+    );
+  }
+
+  .retainer-hero-inner{
+    gap: 22px;
+    text-align: center;
+  }
+
+  .retainer-hero-kicker{
+    font-size: 12px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+  }
+
+  .retainer-hero-title{
+    font-size: clamp(30px, 9vw, 44px);
+    line-height: 1.15;
+    margin: 0 0 12px;
+  }
+
+  .retainer-hero-subtitle{
+    font-size: 20px;
+    line-height: 1.35;
+    margin: 0 0 14px;
+  }
+
+  .retainer-hero-meta{
+    justify-content: center;
+    gap: 8px;
+    margin-top: 18px;
+    margin-bottom: 12px;
+  }
+
+  .retainer-hero-meta span{
+    font-size: 12px;
+    line-height: 1.4;
+    padding: 8px 12px;
+  }
+
+  .retainer-hero-actions{
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+  }
+
+  .retainer-hero-actions .btn{
+    width: 100%;
+    max-width: 320px;
+    min-width: 0;
+  }
+}
 
 /* ===== Mobile nav dropdown ===== */
 .mobile-nav .mnav-acc{
